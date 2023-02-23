@@ -1,38 +1,123 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 608px;
+  margin: 0 auto;
+}
+
+.header {
+  font-family: 'Raleway';
+  font-size: 36px;
   text-align: center;
+  color: #333333;
+  margin-top: 32px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.status-filter {
+  margin-top: 57px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.status-filter ul {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.status-filter ul li {
+  list-style-type: none;
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  color: #333333;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.divider {
+  margin-top: 19px;
+  width: 608px;
+  height: 0;
+  border: 1px solid #bdbdbd;
+}
+
+.add-item {
+  margin-top: 18px;
+}
+
+.add-item form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-item form input {
+  width: 476px;
+  height: 56px;
+  border: 1px solid #bdbdbd;
+  border-radius: 12px;
+  padding: 20px 12px;
+  font-family: 'Montserrat';
+  font-size: 14px;
+}
+
+.add-item form button {
+  font-family: 'Montserrat';
+  width: 109px;
+  height: 56px;
+  background: #2f80ed;
+  box-shadow: 0px 2px 6px rgba(127, 177, 243, 0.4);
+  border-radius: 12px;
+  color: #ffffff;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.todo-list {
+  margin-top: 33px;
+}
+
+.todo-list ul {
+  list-style-type: none;
+}
+
+.todo-list ul li {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 18px;
+  color: #000000;
+  cursor: pointer;
+}
+
+.list-item {
+  height: 40px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border: 1px solid #bdbdbd;
+  border-radius: 4px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.delete-btn {
+  width: 124px;
+  height: 40px;
+  background: #eb5757;
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  line-height: 15px;
+  cursor: pointer;
 }
